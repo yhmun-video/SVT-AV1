@@ -1,0 +1,17 @@
+option('BUILD_APP', type: 'boolean', value: true, description: 'Build Enc Apps')
+
+option('ENABLE_AVX512', type: 'boolean', value: true, description: 'Enable building avx512 code')
+
+option('ENABLE_NEON', type: 'boolean', value: true, description: 'Enables Neon optimizations on AArch64 targets')
+
+option('ENABLE_ARM_CRC32', type: 'boolean', value: true, description: 'Enables Arm CRC32 optimizations')
+
+option('ENABLE_NEON_DOTPROD', type: 'boolean', value: true, description: 'Enables Armv8.2-A Neon DotProd optimizations on AArch64 targets')
+
+option('ENABLE_NEON_I8MM', type: 'boolean', value: true, description: 'Enables Armv8.2-A Neon I8MM optimizations on AArch64 targets')
+
+option('ENABLE_SVE', type: 'boolean', value: true, description: 'Enables Armv8.2-A SVE optimizations on AArch64 targets')
+
+option('ENABLE_SVE2', type: 'boolean', value: true, description: 'Enables Armv9-A SVE2 optimizations on AArch64 targets')
+
+option('NATIVE', type: 'boolean', value: false, description: 'Build for native performance (march=native)')

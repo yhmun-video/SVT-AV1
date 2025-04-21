@@ -1,3 +1,22 @@
+# Meson Build Edition
+
+[![Build Status](https://github.com/yhmun-video/SVT-AV1/actions/workflows/actions.yml/badge.svg)](https://github.com/yhmun-video/SVT-AV1)
+
+## Build and Install
+- __Build Requirements__
+  - Meson 1.1.0 or later (Getting [here](https://mesonbuild.com/Getting-meson.html))
+  - NASM Assembler version 2.14 or later
+- __Build Instructions__
+  - Prepare build
+    - Run `meson setup Build/meson [--buildtype debug|release] [--default-library shared|static]`
+  - Run build
+    - Run `meson compile -C Build/meson`
+  - Install build
+    - Run `meson install -C Build/meson`
+
+--------------------------------------------------------------
+
+
 # Scalable Video Technology for AV1 (SVT-AV1 Encoder)
 
 The Scalable Video Technology for AV1 (SVT-AV1 Encoder) is an
